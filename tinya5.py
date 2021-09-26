@@ -31,8 +31,14 @@ def create_ui():
     row2 = Frame(window)
     lbl_key = Label(row2, text="Key", width = 10)
     keyX = Entry(row2,width=15)
+    keyX.insert(END, '100101')
+
     keyY = Entry(row2,width=20)
+    keyY.insert(END, '01001100')
+
     keyZ = Entry(row2,width=20)
+    keyZ.insert(END, '100110000')
+
     row2.pack(side = TOP, padx = 5 , pady = 5)
     lbl_key.pack(side = LEFT)
     keyX.pack(side = LEFT)
@@ -42,6 +48,7 @@ def create_ui():
     row3 = Frame(window)
     lbl = Label(row3, text="Plain", width = 10)
     txt = Entry(row3,width=60)
+    txt.insert(END, 'Đây là một thông điệp')
     row3.pack(side = TOP, padx = 5 , pady = 5)
     lbl.pack(side = LEFT)
     txt.pack(side = RIGHT, expand = YES)
